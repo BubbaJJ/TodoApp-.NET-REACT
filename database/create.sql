@@ -1,0 +1,15 @@
+CREATE DATABASE TodoAppDemo;
+GO
+
+USE TodoAppDemo;
+GO
+
+CREATE TABLE Todos (
+    Id INTEGER IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL,
+    Completed BIT NOT NULL,
+    DateAdded DATETIME2 NOT NULL,
+    DateDone DATETIME2 NULL,
+    DateDue DATETIME2 NULL
+);
+GO;
